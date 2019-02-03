@@ -1,4 +1,4 @@
-# ths
+# cli3.0
 
 ## Project setup
 ```
