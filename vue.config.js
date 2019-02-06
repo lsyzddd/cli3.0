@@ -1,5 +1,6 @@
 module.exports = {
 	lintOnSave: false,
+
 	css: {
 		loaderOptions: {
 			postcss: {
@@ -17,6 +18,13 @@ module.exports = {
 					})
 				]
 			}
+		}
+	},
+
+	pluginOptions: {
+		"style-resources-loader": {
+			preProcessor: "less",
+			patterns: ["./src/assets/less/main.less"]
 		}
 	}
 };

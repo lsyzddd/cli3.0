@@ -1,6 +1,6 @@
 import Vue from "vue";
 import fontsize from "./plugins/fontsize";
-import 'mint-ui/lib/style.css';
+import "mint-ui/lib/style.css";
 import App from "./App.vue";
 
 Vue.config.productionTip = false;
