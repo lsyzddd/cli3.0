@@ -17,7 +17,8 @@ module.exports = {
 		"no-use-before-define": process.env.NODE_ENV === "production" ? "error" : "off",
 	},
 	parserOptions: {
+		ecmaVersion: 6,
 		parser: "babel-eslint",
-		ecmaVersion: 6
+		sourceType: "module",
 	}
 };
