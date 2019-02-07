@@ -6,13 +6,13 @@
 
 <script>
 export default {
-	created(){
-
+	created() {
+		console.log(process.env.VUE_APP_API_ROOT);
 	}
-}
+};
 </script>
 
-<style lang="less">
+<style lang="less" scoped>
 .a{
 	color: @red;
 }
