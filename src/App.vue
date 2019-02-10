@@ -1,19 +1,41 @@
 <template>
-	<div id="app">
-		<div class="a">12312</div>
+	<div id="app" class="app-container">
+		<app-scroller
+			:bounce="true"
+			:scrollbar="true"
+			:pullDownRefresh="true"
+			:pullUpLoad="true">
+
+		</app-scroller>
 	</div>
 </template>
 
 <script>
+import AppScroller from "@/components/common/AppScroller"
 export default {
+	directives: {
+
+	},
+	data() {
+		return {
+
+		}
+	},
+	methods: {
+
+	},
 	created() {
-		console.log(process.env.VUE_APP_API_ROOT);
+
+	},
+	components: {
+		AppScroller
 	}
 };
 </script>
 
 <style lang="less" scoped>
-.a{
-	color: @red;
+.app-container {
+	height: 100%;
+	width: 100%;
 }
 </style>

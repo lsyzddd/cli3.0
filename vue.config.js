@@ -21,7 +21,15 @@ module.exports = {
 		}
 	},
 
-	configureWebpack: config => {},
+	configureWebpack: config => {
+		/*vux目前不兼容cli3*/
+		/*
+		require("vux-loader").merge(config, {
+			options: {},
+			plugins: ["vux-ui"]
+		});
+		*/
+	},
 
 	chainWebpack: config => {
 		config.resolve.alias.set("data", "@/data");
@@ -29,7 +37,7 @@ module.exports = {
 
 	devServer: {
 		host: "localhost",
-		port: 8080,
+		port: 8090,
 		hot: true,
 		hotOnly: false,
 		open: false,

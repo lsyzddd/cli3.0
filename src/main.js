@@ -1,5 +1,6 @@
 import Vue from "vue";
 import fontsize from "./plugins/fontsize";
+import "./assets/less/reset.less";
 import "mint-ui/lib/style.css";
 import App from "./App.vue";
 

@@ -27,3 +27,6 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+### 妙用
+直接读取不同线上/开发/测试环境中的变量值 process.env.VUE_APP_API_ROOT
